@@ -7,9 +7,9 @@ class Guest:
   def show_guest_info(self):
     print("\n  Guest Information")
     print("Name :",self.name)
-    print("Age :",self.name)
-    print("Phone :",self.name)
-    print("Email :",self.name)
+    print("Age :",self.age)
+    print("Phone :",self.phone)
+    print("Email :",self.email)
 
 class Room:
   def __init__(self,room_num,room_type,price_per_night):
@@ -29,7 +29,7 @@ class Reservation:
   def __init__(self,guest,room,nights):
     self.guest = guest
     self.room = room
-    self.nights = noghts
+    self.nights = nights
     self.total_price = room.price_per_night*nights
   def book_room(self):
     if self.room.is_available:
